@@ -1,0 +1,34 @@
+name: Regenerate Profile SVGs
+
+on:
+  push:
+    paths:
+      - "config.js"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate SVGs
+        run: node generate.js
+
+      - name: Commit and push updated SVGs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          # only commit if something actually changed
+          git diff --staged --quiet || git commit -m "chore: regenerate profile SVGs [skip ci]"
+          git push
