@@ -71,7 +71,7 @@
   <text x="299" y="469" font-family="'Georgia',serif" font-size="11" fill="#96a0c0">Lighthouse scores</text>
   <rect x="36" y="492" width="243" height="68" rx="5" fill="#0e1220" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
   <rect x="36" y="492" width="243" height="3" rx="2" fill="#4dbfff" opacity=".85"/>
-  <text x="48" y="513" font-family="'Courier New',monospace" font-size="12" fill="#d4c0e8">Design Systems</text>
+  <text x="48" y="513" font-family="'Courier New',monospace" font-size="12" fill="#d4c0e8">Design systems</text>
   <text x="48" y="531" font-family="'Georgia',serif" font-size="11" fill="#96a0c0">coherent after two years and five</text>
   <text x="48" y="545" font-family="'Georgia',serif" font-size="11" fill="#96a0c0">designers</text>
   <rect x="287" y="492" width="243" height="68" rx="5" fill="#0e1220" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
